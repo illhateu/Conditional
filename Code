@@ -1,0 +1,77 @@
+public class EvenOddChecker {
+    public static void main(String[] args) {
+        // Create a scanner object to get user input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Ask the user to enter a number
+        System.out.println("Enter a number: ");
+        int number = scanner.nextInt();
+        
+        // Check if the number is even or odd
+        if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
+    }
+}
+public class GradeConverter {
+    public static void main(String[] args) {
+        // Create a scanner object to get the user input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Ask the user to enter a grade
+        System.out.println("Enter a numerical grade (0-100): ");
+        int grade = scanner.nextInt();
+        
+        // Check the grade and print the corresponding letter grade
+        if (grade >= 90) {
+            System.out.println("Your grade is A.");
+        } else if (grade >= 80) {
+            System.out.println("Your grade is B.");
+        } else if (grade >= 70) {
+            System.out.println("Your grade is C.");
+        } else if (grade >= 60) {
+            System.out.println("Your grade is D.");
+        } else {
+            System.out.println("Your grade is F.");
+        }
+    }
+}
+public class DayOfWeek {
+    public static void main(String[] args) {
+        // Create a scanner object to get the user input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Ask the user to enter a number between 1 and 7
+        System.out.println("Enter a number (1-7) for the day of the week: ");
+        int day = scanner.nextInt();
+        
+        // Use switch-case to check the day and print it
+        switch (day) {
+            case 1:
+                System.out.println("Sunday");
+                break;
+            case 2:
+                System.out.println("Monday");
+                break;
+            case 3:
+                System.out.println("Tuesday");
+                break;
+            case 4:
+                System.out.println("Wednesday");
+                break;
+            case 5:
+                System.out.println("Thursday");
+                break;
+            case 6:
+                System.out.println("Friday");
+                break;
+            case 7:
+                System.out.println("Saturday");
+                break;
+            default:
+                System.out.println("Invalid number! Please enter a number between 1 and 7.");
+        }
+    }
+}
